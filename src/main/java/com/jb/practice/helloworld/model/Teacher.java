@@ -5,32 +5,32 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Student {
+public class Teacher {
 	
 	@Id
 	@GeneratedValue
-	private int id;
+	private long id;
 	private String name;
 	private String department;
-	private int marks; 
+	private long salary;
 
-	public Student() {
+	public Teacher() {
 		super();
 	}
 
-	public Student(int id, String name, String department, int marks) {
+	public Teacher(long id, String name, String department, long salary) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.department = department;
-		this.marks = marks;
+		this.salary = salary;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -50,12 +50,12 @@ public class Student {
 		this.department = department;
 	}
 
-	public int getMarks() {
-		return marks;
+	public long getSalary() {
+		return salary;
 	}
 
-	public void setMarks(int marks) {
-		this.marks = marks;
+	public void setSalary(long salary) {
+		this.salary = salary;
 	}
 
 }
